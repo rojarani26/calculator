@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <script language="Javascript" type="text/Javascript">  
+
+       // Onclick event
+
+        function clickevent()  
+    {  
+        document.write("Welcome To LetsGrowMore");  
+    }  
+
+     // MouseOver event
+
+    function mouseoverevent()  
+    {  
+        alert("Welcome To LetsGrowMore");  
+    }  
+     
+    // Focus event
+
+    function focusevent()  
+    {  
+        document.getElementById("input1").style.background="aqua";  
+    }  
+
+    // Keydown event
+
+    function keydownevent()  
+    {  
+        document.getElementById("input2");  
+        alert("Welcome To LetsGrowMore");  
+    }  
+
+    // Load event
+
+    document.write("Registration Successful!");  
+
+</script>  
+
+    
+</head>
+</br>
+<body onload="window.alert('Welcome To LetsGrowMore');"><br/>
+    <form>  
+        <input type="button" onclick="clickevent()" value="Click me"/>  
+    </form> 
+
+    <p onmouseover="mouseoverevent()">Keep the cursor here </p>
+
+    <h2>Fill up this box</h2>  
+    <input type="text" id="input1" onfocus="focusevent()"/>  
+
+    <h2> Enter a key</h2>  
+    <input type="text" id="input2" onkeydown="keydownevent()"/>
+</body>
+</html>
+
